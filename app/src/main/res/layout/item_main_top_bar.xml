@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/backage_color"
+                android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/message_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@mipmap/message"/>
+
+    <TextView
+        android:id="@+id/notice_msg_red_tv"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/message_iv"
+        android:visibility="invisible"
+        android:background="@drawable/shape_round_message_num_"
+        android:text=""
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="大台北外匯"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/user_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"
+        android:src="@mipmap/userico"/>
+</RelativeLayout>
+
+

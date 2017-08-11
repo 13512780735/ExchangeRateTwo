@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/txt_gray_c"
+              android:orientation="vertical">
+    <include
+        layout="@layout/common_top_bar_img"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/comm_item_rate_info_result"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_middle_height"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/rate_input_item_bg"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:textColor="@color/rate_input_txt_color"
+                android:text="會員約定支付寶"/>
+
+
+            <RadioGroup
+                android:id="@+id/btn_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <RadioButton
+                    android:id="@+id/btn_alipay"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/other_result_butt_height"
+                    android:text="支付寶"
+                    android:textSize="16sp"
+                    android:textColor="@color/selected_other_result_butt_txt"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:button="@null"
+                    android:layout_marginRight="-1dp"
+                    android:background="@drawable/selected_other_result_alipay_butt"
+                    />
+                <View
+                    android:layout_width="@dimen/other_result_butt_gap"
+                    android:background="@color/txt_gray"
+                    android:layout_height="@dimen/other_result_butt_height"
+                    />
+                <RadioButton
+                    android:id="@+id/btn_taobao"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/other_result_butt_height"
+                    android:text="淘寶"
+                    android:textSize="16sp"
+                    android:textColor="@color/selected_other_result_butt_txt"
+                    android:gravity="center"
+                    android:layout_marginLeft="-2dp"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:background="@drawable/selected_other_result_taobao_butt"
+                    />
+                <View
+                    android:layout_width="@dimen/other_result_butt_gap"
+                    android:background="@color/txt_gray"
+                    android:layout_height="@dimen/other_result_butt_height"
+                    />
+                <RadioButton
+                    android:id="@+id/btn_wechat"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/other_result_butt_height"
+                    android:text="微信錢包"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="-2dp"
+                    android:textColor="@color/selected_other_result_butt_txt"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:background="@drawable/selected_other_result_wechat_butt"
+                    />
+
+            </RadioGroup>
+
+            <include
+                layout="@layout/item_comm_other_result_layout"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_bottom_height"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/rate_input_item_bg"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:textColor="@color/rate_input_txt_color"
+                android:text="匯入台幣的帳號"/>
+            <include
+                layout="@layout/comm_item_rate_info_result_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

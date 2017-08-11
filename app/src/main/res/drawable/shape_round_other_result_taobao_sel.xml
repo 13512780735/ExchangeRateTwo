@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+
+    <!-- 填充的颜色 -->
+    <solid android:color="@color/butt_orangle"/>
+    <stroke android:color="@color/butt_orangle" android:width="@dimen/other_result_butt_gap"/>
+
+</shape>

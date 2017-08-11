@@ -1,0 +1,26 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="defulat_button_height">50dp</dimen>
+    <dimen name="defulat_input_height">50dp</dimen>
+
+    <dimen name="defulat_top_bar_height">50dp</dimen>
+    <dimen name="defulat_txt_size">16sp</dimen>
+    <dimen name="defulat_stroke_height">1px</dimen>
+
+    <dimen name="home_dialog_rate_item">5dp</dimen>
+    <dimen name="rate_butt_height">45dp</dimen>
+    <dimen name="rate_input_item_height">45dp</dimen>
+    <dimen name="rate_result_item_height">50dp</dimen>
+    <dimen name="rate_result_item_middle_height">55dp</dimen>
+    <dimen name="rate_result_bottom_height">40dp</dimen>
+    <dimen name="rate_input_txt_size">14sp</dimen>
+    <dimen name="rate_input_txt_small_size">12sp</dimen>
+    <dimen name="rate_result_txt_small_size">12sp</dimen>
+    <dimen name="rate_input_txt_big_size">18sp</dimen>
+    <dimen name="rate_input_item_gap">1px</dimen>
+    <dimen name="other_result_butt_gap">0.5dp</dimen>
+    <dimen name="other_result_butt_height">48dp</dimen>
+</resources>

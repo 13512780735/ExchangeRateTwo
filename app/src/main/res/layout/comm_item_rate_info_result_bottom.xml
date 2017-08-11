@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/bank_type_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="行别:"
+            android:textIsSelectable="true"
+            android:textColor="@color/txt_red"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/bank_account_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="帳号:"
+            android:textIsSelectable="true"
+            android:textColor="@color/txt_red"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/bank_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="户名:"
+            android:textIsSelectable="true"
+            android:textColor="@color/txt_red"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/input_ps_et"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_stroke_rate_input2"
+            android:gravity="top|left"
+            android:hint="備註"
+            android:padding="5dp"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color"
+            android:textColorHint="@color/rate_input_txt_color2"
+            android:textSize="@dimen/rate_input_txt_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/go_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defulat_button_height"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_rate_submit_butt"
+        android:gravity="center"
+        android:text="送   出"
+        android:textSize="18sp"/>
+</LinearLayout>

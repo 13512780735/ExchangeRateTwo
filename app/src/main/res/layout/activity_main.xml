@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.MainActivity">
+
+       <include
+           layout="@layout/item_main_top_bar"
+           />
+
+        <com.pk4pk.imagecycleviewlib.ImageCycleView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/image_cycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <include
+            layout="@layout/item_main_middle_comm"
+            />
+
+        <LinearLayout
+            android:id="@+id/notice_msg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/defualt_window_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/radio"/>
+
+            <TextView
+                android:id="@+id/notice_msg_tv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:focusable="true"
+                android:textColor="@color/txt_gray"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:text=""/>
+        </LinearLayout>
+
+
+        <include
+            layout="@layout/item_main_bottom_layout"/>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="rate_item_obj" type="id"/>
+    <item name="kk_order_id" type="id"/>
+</resources>

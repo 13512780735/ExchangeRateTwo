@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/item_comm_other_layout"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_result_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/input_alipay_account_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_stroke_rate_input2"
+            android:gravity="center_vertical"
+            android:hint="請輸入支付寶賬號"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color2"
+            android:textColorHint="@color/rate_input_hint_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_result_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/input_alipay_passwd_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_stroke_rate_input2"
+            android:gravity="center_vertical"
+            android:hint="請輸入支付寶密碼,不提供密碼請輸入0"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color2"
+            android:textColorHint="@color/rate_input_hint_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_result_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <EditText
+            android:id="@+id/input_alipay_name_et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_round_stroke_rate_input2"
+            android:gravity="center_vertical"
+            android:hint="請輸入姓名"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color2"
+            android:textColorHint="@color/rate_input_hint_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+    </LinearLayout>
+</LinearLayout>

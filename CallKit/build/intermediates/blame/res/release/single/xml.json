@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\release\\xml\\provider_paths.xml",
+        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\xml\\provider_paths.xml"
+    },
+    {
+        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\release\\xml\\rc_file_path.xml",
+        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\xml\\rc_file_path.xml"
+    }
+]

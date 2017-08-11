@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/txt_gray_c"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/common_top_bar_img"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/type_operate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="賣出幣別:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/type_operate_value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text="人民幣"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/result_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="匯入幣別:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="台幣"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最新匯率:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/now_rate_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/butt_orangle"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="類型:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="點數計算"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年利息:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/year_rate_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/butt_orangle"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="兌換率:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+
+        <TextView
+            android:id="@+id/coin_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="人民幣"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"
+            />
+        <TextView
+            android:id="@+id/bli_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/txt_red"
+            android:textSize="@dimen/rate_input_txt_size"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="點"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="請輸入買點數:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <EditText
+            android:id="@+id/input_value_et"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:background="@drawable/shape_round_stroke_rate_input2"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color2"
+            android:textSize="@dimen/rate_input_txt_size"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可換算台幣:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/get_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/butt_orangle"
+            android:textSize="@dimen/rate_input_txt_big_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rate_input_item_height"
+        android:layout_marginTop="@dimen/rate_input_item_gap"
+        android:background="@color/rate_input_item_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="實付台幣金額:"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+        <TextView
+            android:id="@+id/real_get_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="@dimen/rate_input_txt_size"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/go_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/defulat_button_height"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_round_rate_submit_butt"
+        android:gravity="center"
+        android:text="送   出"
+        android:textSize="18sp"/>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/txt_gray_c"
+              android:orientation="vertical">
+    <include
+        layout="@layout/common_top_bar_img"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                layout="@layout/comm_item_rate_info_result"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_middle_height"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/rate_input_item_bg"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:textColor="@color/rate_input_txt_color"
+                android:text="會員約定大陸銀行帳戶"/>
+
+            <include
+                layout="@layout/item_comm_buy_result_layout"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_bottom_height"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@color/rate_input_item_bg"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:textColor="@color/rate_input_txt_color"
+                android:text="匯入台幣的帳號"/>
+            <include
+                layout="@layout/comm_item_rate_info_result_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

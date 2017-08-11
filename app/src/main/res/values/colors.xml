@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#F57254</color>
+    <color name="colorPrimaryDark">#F57254</color>
+    <color name="colorAccent">#F57254</color>
+
+    <color name="backage_color">#F57254</color>
+    <color name="defualt_window_background">#EFEFEF</color>
+    <color name="defualt_textcolor">#EFEFEF</color>
+
+
+    <color name="stroke_red_color">#F57254</color>
+    <color name="stroke_gray_color">#cccccc</color>
+    <color name="stroke_tips_color">#666666</color>
+
+    <color name="white">#ffffff</color>
+
+    <color name="butt_yellow">#ffc540</color>
+    <color name="butt_green">#68cd50</color>
+    <color name="butt_orangle">#ff7b06</color>
+    <color name="butt_bule">#70b5fc</color>
+    <color name="butt_pink">#ec64ae</color>
+    <color name="butt_red">#ffff4444</color>
+
+
+    <color name="txt_red">#f57254</color>
+    <color name="txt_pink">#f89c87</color>
+    <color name="txt_black">#666666</color>
+    <color name="txt_gray">#999999</color>
+    <color name="txt_gray_c">#cccccc</color>
+
+    <color name="line_color">#e0e0e0</color>
+    <color name="userinfo_line_color">#e0e0e0</color>
+
+    <color name="rate_input_item_bg">#EFEFEF</color>
+    <color name="rate_input_txt_color">#666666</color>
+    <color name="rate_input_txt_color2">#000000</color>
+    <color name="rate_input_hint_txt_color">#999999</color>
+    <color name="ohter_result_butt_nor_bg">#e0e0e0</color>
+
+    <color tools:override="true" name="ucrop_color_toolbar_widget">@color/white</color>
+</resources>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/txt_gray_c"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/common_top_bar_img"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/comm_item_rate_info_result"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center"
+                android:text="會員約定大陸銀行賬戶"
+                android:textColor="@color/rate_input_txt_color"
+                android:textSize="16sp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/input_bank_dai_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="請輸入銀行代號"
+                    android:lines="1"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/input_bank_type_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="請輸入大陸銀行行別"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/input_bank_city_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="例：福建省、漳州市"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/input_bank_zhi_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="例：漳州支行"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/input_bank_account_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="請輸入賬號"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/input_bank_name_et"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_round_stroke_rate_input2"
+                    android:gravity="center_vertical"
+                    android:hint="請輸入戶名"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:paddingLeft="5dp"
+                    android:text=""
+                    android:textColor="@color/rate_input_txt_color2"
+                    android:textColorHint="@color/rate_input_hint_txt_color"
+                    android:textSize="@dimen/rate_input_txt_size"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rate_result_item_height"
+                android:layout_marginTop="@dimen/rate_input_item_gap"
+                android:background="@color/rate_input_item_bg"
+                android:gravity="center"
+                android:text="匯入台幣的賬號"
+                android:textColor="@color/rate_input_txt_color"
+                android:textSize="16sp"/>
+
+            <include
+                layout="@layout/comm_item_rate_info_result_bottom"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

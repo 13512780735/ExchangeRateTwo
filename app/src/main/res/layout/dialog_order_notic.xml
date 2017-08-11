@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_home_rate_"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="通知匯款"
+        android:textColor="@color/rate_input_txt_color"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/txt_gray_c" />
+
+    <EditText
+        android:id="@+id/notice_hui_name_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_round_stroke_modify_userinfo"
+        android:hint="請輸入匯款人"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/rate_input_txt_color"
+        android:textColorHint="@color/rate_input_hint_txt_color"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/notice_hui_bank_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_round_stroke_modify_userinfo"
+        android:hint="請輸入匯款銀行"
+        android:padding="5dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textColor="@color/rate_input_txt_color"
+        android:textColorHint="@color/rate_input_hint_txt_color"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/notice_hui_other_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/shape_round_stroke_modify_userinfo"
+        android:hint="請輸入銀行后五碼"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="@color/rate_input_txt_color"
+        android:textColorHint="@color/rate_input_hint_txt_color"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/left_butt"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/shape_round_stroke_tips_butt"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/rate_input_txt_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/ok_butt"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/shape_round_modify_user_butt"
+            android:gravity="center"
+            android:text="確定"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

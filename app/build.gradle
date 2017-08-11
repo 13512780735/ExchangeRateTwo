@@ -1,0 +1,216 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'walle'
+//apply plugin: 'AndResGuard'
+//apply plugin: 'cn.jony.compress.png'
+
+//微信资源压缩打包工具andResGuard
+//https://github.com/shwenzhang/AndResGuard
+//andResGuard {
+//    // mappingFile = file("./resource_mapping.txt")
+//    mappingFile = null
+////    use7zip = true
+//    use7zip = false
+//    useSign = true
+//    // it will keep the origin path of your resources when it's true
+//    keepRoot = false
+//    whiteList = [
+//            // your icon
+//            "R.drawable.icon",
+//            // for fabric
+//            "R.string.com.crashlytics.*",
+//            // for umeng update
+//            "R.string.umeng*",
+//            "R.string.UM*",
+//            "R.string.tb_*",
+//            "R.layout.umeng*",
+//            "R.layout.tb_*",
+//            "R.drawable.umeng*",
+//            "R.drawable.tb_*",
+//            "R.anim.umeng*",
+//            "R.color.umeng*",
+//            "R.color.tb_*",
+//            "R.style.*UM*",
+//            "R.style.umeng*",
+//            "R.id.umeng*",
+//            // umeng share for sina
+//            "R.drawable.sina*",
+//            // for google-services.json
+//            "R.string.google_app_id",
+//            "R.string.gcm_defaultSenderId",
+//            "R.string.default_web_client_id",
+//            "R.string.ga_trackingId",
+//            "R.string.firebase_database_url",
+//            "R.string.google_api_key",
+//            "R.string.google_crash_reporting_api_key"
+//    ]
+//    compressFilePattern = [
+//            "*.png",
+//            "*.jpg",
+//            "*.jpeg",
+//            "*.gif",
+//            "resources.arsc"
+//    ]
+//    sevenzip {
+//        artifact = 'com.tencent.mm:SevenZip:1.1.16'
+//        //path = "/usr/local/bin/7za"
+//    }
+//}
+
+
+//美团多渠道打包
+walle {
+    // 指定渠道包的输出路径
+    apkOutputFolder = new File("${project.buildDir}/outputs/channels");
+    // 定制渠道包的APK的文件名称
+//    apkFileNameFormat = '${appName}-${packageName}-${channel}-${buildType}-v${versionName}-${versionCode}-${buildTime}.apk';
+    apkFileNameFormat = "即时汇率"+'-${channel}-${buildType}-v${versionName}-${buildTime}.apk';
+    // 渠道配置文件
+    channelFile = new File("${project.getProjectDir()}/channel")
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+    //use legacy for android 6.0
+//    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.likeit.currenciesapp"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 40
+        versionName "1.4.0"
+
+        // Enabling multidex support.
+        multiDexEnabled true
+
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "DI3J1QUUv87h7STHV0irn",
+                GETUI_APP_KEY   : "KljF1W4whl64ecsx8nld13",
+                GETUI_APP_SECRET: "jGtzoQaxXa6bhXYmQjBFk"
+        ]
+
+        ndk {
+            abiFilters "armeabi"
+//            abiFilters "armeabi-v7a"
+//            abiFilters "armeabi-v7a", "x86"
+        }
+
+    }
+
+    //签名信息
+    signingConfigs {
+        release {
+            storeFile file("zznc.jks")
+            storePassword "123456"
+            keyAlias "key0"
+            keyPassword "123456"
+            //https://developer.android.com/about/versions/nougat/android-7.0.html#apk_signature_v2
+            v2SigningEnabled true
+        }
+
+        debug {
+            storeFile file("zznc.jks")
+            storePassword "123456"
+            keyAlias "key0"
+            keyPassword "123456"
+            //https://developer.android.com/about/versions/nougat/android-7.0.html#apk_signature_v2
+            v2SigningEnabled true
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+//            //Zipalign优化
+            zipAlignEnabled true
+//            // 移除无用的resource文件
+            shrinkResources false
+//            //签名
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug{
+            minifyEnabled false
+//            //Zipalign优化
+            zipAlignEnabled true
+//            // 移除无用的resource文件
+            shrinkResources false
+//            //签名
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+
+    //Lint found errors in the project; aborting build
+    lintOptions {
+        abortOnError false
+    }
+
+
+
+}
+
+
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    compile rootProject.libSupportRecyclerview
+    compile rootProject.libSupportAppcompat
+    compile rootProject.libSupportDesign
+    compile rootProject.libSupportCardView
+    compile rootProject.libSupportV4
+    //OKHTTP
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    compile 'com.orhanobut:logger:1.15'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+
+
+    //Glide  https://github.com/bumptech/glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //https://github.com/Yalantis/uCrop
+//    compile 'com.yalantis:ucrop:2.2.0'
+    compile 'com.yalantis:ucrop:2.2.0-native'
+
+
+    //RX
+    //    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    //    compile 'io.reactivex.rxjava2:rxjava:2.0.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.2.3'
+    //https://github.com/square/retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    //https://github.com/AndroidKnife/RxBus
+    compile 'com.hwangjr.rxbus:rxbus:1.0.5'
+    compile 'com.getui:sdk:2.9.5.0'
+    compile project(':imagecycleviewlib-release')
+    compile project(':CallKit')
+
+
+    compile 'com.android.support:multidex:1.0.1'
+
+    //https://github.com/eleme/HermesEventBus
+//    compile 'xiaofei.library:hermes-eventbus:0.3.0'
+
+
+    compile 'com.tencent.bugly:crashreport_upgrade:1.3.0'
+
+    //https://github.com/Meituan-Dianping/walle
+    //美团多渠道打包 支持 V2 Scheme签名
+    compile 'com.meituan.android.walle:library:1.1.0'
+
+
+    compile(name: 'HMS-SDK-2.4.0.300', ext: 'aar')
+}
+
+repositories { flatDir { dirs 'aars' } }
+
