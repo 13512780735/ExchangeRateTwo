@@ -78,8 +78,8 @@ android {
         applicationId "com.likeit.currenciesapp"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 40
-        versionName "1.4.0"
+        versionCode 41
+        versionName "1.4.1"
 
         // Enabling multidex support.
         multiDexEnabled true
@@ -166,6 +166,7 @@ dependencies {
     compile rootProject.libSupportCardView
     compile rootProject.libSupportV4
     //OKHTTP
+    compile 'com.loopj.android:android-async-http:1.4.9'
     compile 'com.squareup.okhttp3:okhttp:3.5.0'
     compile 'com.orhanobut:logger:1.15'
     compile 'com.jakewharton:butterknife:8.4.0'

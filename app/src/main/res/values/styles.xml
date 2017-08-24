@@ -39,7 +39,10 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:backgroundDimEnabled">true</item>
     </style>
-
+    <style name="style_pop_animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_out</item>
+    </style>
 
 
 </resources>

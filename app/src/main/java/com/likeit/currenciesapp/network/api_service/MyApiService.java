@@ -37,7 +37,8 @@ public interface MyApiService {
 //    String IMG_BASE_URL =BuildConfig.DEBUG ? "http://dtb.wbteam.cn/":"http://2467.cc/";
 
     String BASE_URL = "http://2467.cc/api.php/";
-    String IMG_BASE_URL ="http://2467.cc/";
+    String IMG_BASE_URL = "http://2467.cc/";
+    public final static String RegisterSource = BASE_URL + "?m=login&a=get_regfrom";
 
     @FormUrlEncoded
     @POST("?m=login&a=send_sms")
@@ -49,7 +50,10 @@ public interface MyApiService {
                                                     @Field("mobile") String mobile,
                                                     @Field("password") String password,
                                                     @Field("truename") String truename,
-                                                    @Field("telcode") String telcode);
+                                                    @Field("telcode") String telcode,
+                                                    @Field("regfrom_type") String regfrom_type,
+                                                    @Field("jname")String jname,
+                                                    @Field("jtel")String jtel);
 
     @FormUrlEncoded
     @POST("?m=index&a=get_notice")
@@ -100,9 +104,9 @@ public interface MyApiService {
     @FormUrlEncoded
     @POST("?m=user&a=search_user")
     Observable<HttpResult<ArrayList<KeFuEntity>>> searchUsers(@Field("ukey") String ukey,
-                                                       @Field("pgsize") String pgsize,
-                                                       @Field("page") int page,
-                                                       @Field("keyword") String keyword);
+                                                              @Field("pgsize") String pgsize,
+                                                              @Field("page") int page,
+                                                              @Field("keyword") String keyword);
 
     @FormUrlEncoded
     @POST("?m=index&a=get_huilv")
@@ -132,7 +136,7 @@ public interface MyApiService {
 
     @FormUrlEncoded
     @POST("?m=user&a=get_info_by_rongcloudid")
-    Observable<HttpResult<UserInfoByNameEntity>> getUserInfoByUid(@Field("ukey") String ukey,@Field("rongcloud_id") String userName);
+    Observable<HttpResult<UserInfoByNameEntity>> getUserInfoByUid(@Field("ukey") String ukey, @Field("rongcloud_id") String userName);
 
     @FormUrlEncoded
     @POST("?m=user&a=up_headimg_base64")

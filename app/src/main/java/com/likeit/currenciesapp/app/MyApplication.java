@@ -35,8 +35,15 @@ public class MyApplication extends MultiDexApplication {
     public static boolean isVoiceCalling = true;
     //    public static boolean isLogin = false;
     public static boolean isNotice = true;
-
-    public static MyApplication getInstall() {
+    public static MyApplication getInstance() {
+        if (myApplication == null) {
+            return new MyApplication();
+        } else {
+            return myApplication;
+        }
+    }
+    public static MyApplication getInstall()
+    {
         return myApplication;
     }
 

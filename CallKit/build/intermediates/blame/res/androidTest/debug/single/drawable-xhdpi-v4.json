@@ -40,12 +40,12 @@
         "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_ic_phone_normal.png"
     },
     {
-        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f623.png",
-        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u1f623.png"
-    },
-    {
         "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f60f.png",
         "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u1f60f.png"
+    },
+    {
+        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f623.png",
+        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u1f623.png"
     },
     {
         "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f004.png",
@@ -896,12 +896,12 @@
         "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u270c.png"
     },
     {
-        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voice_unread.png",
-        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_voice_unread.png"
-    },
-    {
         "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u2614.png",
         "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\u2614.png"
+    },
+    {
+        "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\rc_voice_unread.png",
+        "source": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\IMKit\\build\\intermediates\\bundles\\default\\res\\drawable-xhdpi-v4\\rc_voice_unread.png"
     },
     {
         "merged": "D:\\as\\taibei\\ExchangeRateTwo\\ExchangeRateTwo\\CallKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xhdpi-v4\\u1f61f.png",

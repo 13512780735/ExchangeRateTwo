@@ -169,11 +169,12 @@ public class RateInputActivity extends BaseActivity {
                             showToast("請選擇存放天數");
                             return;
                         }
-
-                        if(ArithTool.sub(selectPreInfoEntity.getMinmoney(),String.valueOf(inputNum))>0){
-                            showToast("輸入金額不能小於"+selectPreInfoEntity.getMinmoney());
-                            return;
-                        }
+                        Log.e("TAG",String.valueOf(inputNum));
+        //                Log.e("TAG",selectPreInfoEntity.getMinmoney().toString());
+//                        if(ArithTool.sub(selectPreInfoEntity.getMinmoney().toString(),String.valueOf(inputNum))>0){
+//                            showToast("輸入金額不能小於"+selectPreInfoEntity.getMinmoney());
+//                            return;
+//                        }
                         bundle.putString(PRE_INFO_ID,selectPreInfoEntity.getId());
                         toActivity(PreResultActivity.class, bundle);
                         break;

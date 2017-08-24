@@ -75,7 +75,7 @@ public class HttpMethods extends BaseHttpMethods {
     }
 
     public void getUserInfoByUid(MySubscriber subscriber, String uKey, String uid) {
-        toSubscribe(myApiService.getUserInfoByUid(uKey,uid), subscriber);
+        toSubscribe(myApiService.getUserInfoByUid(uKey, uid), subscriber);
     }
 
 
@@ -91,8 +91,8 @@ public class HttpMethods extends BaseHttpMethods {
         toSubscribe(myApiService.getDian(uKey), subscriber);
     }
 
-    public void searchUsers(MySubscriber subscriber, String uKey,String pgsize,int page,String keyword) {
-        toSubscribe(myApiService.searchUsers(uKey,pgsize,page,keyword), subscriber);
+    public void searchUsers(MySubscriber subscriber, String uKey, String pgsize, int page, String keyword) {
+        toSubscribe(myApiService.searchUsers(uKey, pgsize, page, keyword), subscriber);
     }
 
     public void getDianHuiLv(MySubscriber subscriber, String uKey) {
@@ -118,8 +118,8 @@ public class HttpMethods extends BaseHttpMethods {
     }
 
 
-    public void getUserBank(MySubscriber subscriber, String ukey, String type, String pty,String type2) {
-        toSubscribe( myApiService.getUserBank(ukey, type, pty,type2), subscriber);
+    public void getUserBank(MySubscriber subscriber, String ukey, String type, String pty, String type2) {
+        toSubscribe(myApiService.getUserBank(ukey, type, pty, type2), subscriber);
     }
 
     public void getOrderList(MySubscriber<ArrayList<OrderInfoEntity>> subscriber, String ukey, int page, int pgsize) {
@@ -218,7 +218,7 @@ public class HttpMethods extends BaseHttpMethods {
                              String pty,
                              String bz) {
         Observable<HttpResult> observable = myApiService.modify_order(ukey, id,
-                 bank1, bank2, bank3, bank4, bank5, bank6, bank11, bank12, pty, bz );
+                bank1, bank2, bank3, bank4, bank5, bank6, bank11, bank12, pty, bz);
         toSubscribe(observable, subscriber);
     }
 
@@ -253,8 +253,8 @@ public class HttpMethods extends BaseHttpMethods {
         toSubscribe(observable, subscriber);
     }
 
-    public void registerUser(MySubscriber<EmptyEntity> subscriber, String getuicid, String mobile, String password, String truename, String telcode) {
-        Observable<HttpResult<EmptyEntity>> observable = myApiService.registeUser(getuicid, mobile, password, truename, telcode);
+    public void registerUser(MySubscriber<EmptyEntity> subscriber, String getuicid, String mobile, String password, String truename, String telcode, String regfrom_type, String jname, String jtel) {
+        Observable<HttpResult<EmptyEntity>> observable = myApiService.registeUser(getuicid, mobile, password, telcode, truename, regfrom_type, jname, jtel);
         toSubscribe(observable, subscriber);
     }
 
