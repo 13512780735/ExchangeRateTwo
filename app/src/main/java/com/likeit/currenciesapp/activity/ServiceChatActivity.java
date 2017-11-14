@@ -18,6 +18,7 @@ import com.likeit.currenciesapp.R;
 import com.likeit.currenciesapp.app.MyApplication;
 import com.likeit.currenciesapp.base.BaseActivity;
 import com.likeit.currenciesapp.configs.EaseConstant;
+import com.likeit.currenciesapp.im.ConversationFragment01;
 import com.likeit.currenciesapp.rxbus.RefreshEvent;
 import com.likeit.currenciesapp.utils.DialogUtil;
 import com.orhanobut.logger.Logger;

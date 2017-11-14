@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
@@ -233,6 +234,7 @@ public class MainActivity extends BaseActivity {
                     myHandler.sendEmptyMessage(IMLOGIN);
                     homeInfoEntity = httpResult.getInfo();
                     noticeMsgTv.setText(homeInfoEntity.getPmd());
+                    Log.d("TAG222",homeInfoEntity.getPmd());
                     noticeMsgTv.setSelected(true);
                     initRateInfo();
                     initImageCycle();

@@ -28,7 +28,7 @@ import butterknife.OnClick;
 public class PreResultActivity extends RateInfoBaseActivity {
 
 
-    @BindView(R.id.btn_radio_group)
+       @BindView(R.id.btn_radio_group)
     RadioGroup btnRadioGroup;
     @BindView(R.id.input_bank_account_et)
     EditText inputBankAccountEt;

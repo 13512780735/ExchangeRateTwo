@@ -45,6 +45,20 @@ public class DianBuyResultActivity extends RateInfoBaseActivity {
     EditText inputBankZhiEt;
 
 
+    @BindView(R.id.tx1_1)
+    TextView tx11;
+    @BindView(R.id.tx1_2)
+    TextView tx12;
+    @BindView(R.id.tx1_3)
+    TextView tx13;
+    @BindView(R.id.tx2_1)
+    TextView tx21;
+    @BindView(R.id.tx2_2)
+    TextView tx22;
+    @BindView(R.id.tx2_3)
+    TextView tx23;
+    @BindView(R.id.tx3_1)
+    TextView tx31;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

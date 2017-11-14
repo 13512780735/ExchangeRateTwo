@@ -81,8 +81,8 @@ public class RegisterActivity extends BaseActivity {
     @BindView(R.id.protocol_tv)
     TextView protocolTv;
     private int time_tatol = 60;
-    private PopupWindow popupWindow;
     private List<RegisterSourceEntity> dataSource;
+    private PopupWindow popupWindow;
     private View view;
     private ListView lv_group;
     private RegisterSourceAdapter groupAdapter;
